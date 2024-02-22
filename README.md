@@ -6,4 +6,4 @@
 </div>
 
 <br/><br/><br/>
-The Project is made by:
+Contributors:
