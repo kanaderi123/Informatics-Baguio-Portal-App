@@ -7,31 +7,43 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.i_portal.databinding.ActivityStudentLoginBinding
 
 
+
+
 class StudentLogin : AppCompatActivity()
 {
 
-    //test user
     private lateinit var binding: ActivityStudentLoginBinding
-    var uname = "user123"
-    var pword = "123"
+    //test user initialization
+    private var uname = "user123"
+    private var pword = "123"
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_student_login)
 
+
         binding = ActivityStudentLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //back button
+        binding.btnback.setOnClickListener{
+            @Suppress("DEPRECATION")
+            onBackPressed()
+        }
+
+        //login button
         binding.btnLogin.setOnClickListener{
             //bind textbox via ID to a variable
             val tbuname = binding.tbStudid.text.toString()
             val tbpword = binding.tbPword.text.toString()
 
+
+
             //condition to check if username and password are empty
-            if(tbuname.isNullOrEmpty() || tbpword.isNullOrEmpty())
+            if(tbuname.isEmpty() || tbpword.isEmpty())
             {
-                Toast.makeText(this@StudentLogin, "Please Input your correct ID Number and Password", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@StudentLogin, "Please Input your ID Number and Password", Toast.LENGTH_SHORT).show()
             }
             //condition to check if username and password are correct
             else if(tbuname == uname && tbpword == pword)
@@ -49,11 +61,7 @@ class StudentLogin : AppCompatActivity()
             }
         }
 
-
-
-
-
-
     }
 
 }
+

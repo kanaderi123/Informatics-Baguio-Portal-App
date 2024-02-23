@@ -19,8 +19,8 @@
         <!--back button-->
         <Button
             android:id="@+id/btnback"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@drawable/baseline_arrow_back_24">
         </Button>
         <!--logo-->
@@ -100,6 +100,7 @@
 
         <!--checkbox to save login info-->
         <CheckBox
+            android:id="@+id/save_login_info"
             android:layout_marginTop="20dp"
             android:layout_width="180dp"
             android:layout_height="60dp"
