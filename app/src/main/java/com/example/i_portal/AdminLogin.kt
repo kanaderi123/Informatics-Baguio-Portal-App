@@ -31,7 +31,7 @@ class AdminLogin : AppCompatActivity() {
             //bind textbox via ID to a variable
             val tbuname = binding.tbUname.text.toString()
             val tbpword = binding.tbPword.text.toString()
-
+/*
             //condition to check if username and password are empty
             if(tbuname.isEmpty() || tbpword.isEmpty())
             {
@@ -41,16 +41,17 @@ class AdminLogin : AppCompatActivity() {
             else if(tbuname == adminuname && tbpword == adminpword)
             {
                 //If true Go to admin dashboard
-                val intent = Intent(this,AdminDashboard::class.java)
+              */  val intent = Intent(this,AdminDashboard::class.java)
                 startActivity(intent)
                 Toast.makeText(this@AdminLogin, "Login Successful", Toast.LENGTH_SHORT).show()
-                finish()
+                finish()/*
             }
             //if false, pop up text alert
             else
             {
                 Toast.makeText(this@AdminLogin, "Invalid Username or Password", Toast.LENGTH_SHORT).show()
             }
+*/
         }
     }
 
