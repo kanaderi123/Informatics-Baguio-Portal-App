@@ -85,7 +85,6 @@
             app:helperTextTextColor="#CB4545">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:inputType="textPassword"
                 android:id="@+id/tb_pword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -93,6 +92,7 @@
                 android:layout_marginRight="15dp"
                 android:background="#19325B"
                 android:fontFamily="@font/montserrat"
+                android:inputType="textPassword"
                 android:padding="15dp"
                 android:textColor="#c7d5e0">
             </com.google.android.material.textfield.TextInputEditText>

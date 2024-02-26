@@ -14,7 +14,6 @@ class StudentDashboard : AppCompatActivity() {
     //initialization of pages
     private val homeFragment = HomeFragment()
     private val schedFragment = SchedFragment()
-    private val gradesFragment = GradesFragment()
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -27,7 +26,6 @@ class StudentDashboard : AppCompatActivity() {
             {
                 R.id.navigation_home -> replaceFragment(homeFragment)
                 R.id.navigation_schedule -> replaceFragment(schedFragment)
-                R.id.navigation_grades -> replaceFragment(gradesFragment)
             }
             true
         }

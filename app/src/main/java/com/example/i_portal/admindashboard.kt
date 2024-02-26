@@ -98,6 +98,7 @@ class AdminDashboard : AppCompatActivity(), NavigationView.OnNavigationItemSelec
         when (item.itemId)
         {
             R.id.home-> replaceFragment(HomeFragment())
+            R.id.settings->replaceFragment(ProfileSettingsFragment())
             R.id.logout-> showSignOutDialog()
         }
         return true

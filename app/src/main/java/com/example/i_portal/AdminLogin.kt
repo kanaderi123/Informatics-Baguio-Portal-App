@@ -2,7 +2,6 @@ package com.example.i_portal
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.i_portal.databinding.ActivityAdminLoginBinding
 
@@ -31,9 +30,9 @@ class AdminLogin : AppCompatActivity() {
             //bind textbox via ID to a variable
             val tbuname = binding.tbUname.text.toString()
             val tbpword = binding.tbPword.text.toString()
-/*
+
             //condition to check if username and password are empty
-            if(tbuname.isEmpty() || tbpword.isEmpty())
+/*            if(tbuname.isEmpty() || tbpword.isEmpty())
             {
                 Toast.makeText(this@AdminLogin, "Please Input your correct Username and Password", Toast.LENGTH_SHORT).show()
             }
@@ -41,10 +40,12 @@ class AdminLogin : AppCompatActivity() {
             else if(tbuname == adminuname && tbpword == adminpword)
             {
                 //If true Go to admin dashboard
-              */  val intent = Intent(this,AdminDashboard::class.java)
+*/
+                val intent = Intent(this,AdminDashboard::class.java)
                 startActivity(intent)
+/*
                 Toast.makeText(this@AdminLogin, "Login Successful", Toast.LENGTH_SHORT).show()
-                finish()/*
+                finish()
             }
             //if false, pop up text alert
             else
