@@ -6,4 +6,6 @@
 </div>
 
 <br/><br/><br/>
-<a href="https://docs.google.com/document/d/1nvfaNvG794uKsRqCti2pKNPHkLQ2-iTNx5CA_991V9s/edit?usp=sharing" align="center">App Documentation (Google Docs)</a>
+<div align="center">
+ <a href="https://docs.google.com/document/d/1nvfaNvG794uKsRqCti2pKNPHkLQ2-iTNx5CA_991V9s/edit?usp=sharing">App Documentation (Google Docs)</a>
+</div>
