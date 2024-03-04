@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggradient"
+    android:padding="25dp"
+    tools:context=".StudentLogin">
+
+    <!--container-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginTop="20dp"
+        android:background="#99000000"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <!--back button-->
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/baseline_arrow_back_24">
+        </Button>
+        <!--logo-->
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:background="@drawable/studentlogo"
+            android:contentDescription="@string/studentlogo">
+        </ImageView>
+        <!--labels-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/eurostile"
+            android:gravity="center"
+            android:hint="@string/hello_iconian"
+            android:textColorHint="#66c0f4"
+            android:textSize="40sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:hint="@string/log_in_using_your_id_number"
+            android:textColorHint="@color/white"
+            android:textSize="15sp">
+        </TextView>
+        <!--ID number textbox-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/id_number"
+            android:textColorHint="#1b2838"
+            android:layout_marginBottom="15dp"
+            app:helperTextTextColor="#CB4545">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tb_studid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#c7d5e0"
+                android:fontFamily="@font/montserrat"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="#1b2838">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--Password textbox-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:hint="@string/password"
+            android:textColorHint="#c7d5e0"
+            app:helperTextTextColor="#CB4545">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tb_pword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#19325B"
+                android:fontFamily="@font/montserrat"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textColor="#c7d5e0">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--checkbox to save login info-->
+        <CheckBox
+            android:id="@+id/save_login_info"
+            android:layout_marginTop="20dp"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="@string/save_login_info"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"
+            android:layout_gravity="center">
+        </CheckBox>
+
+
+        <!--login button-->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="#1374C8"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/login"
+            android:textColor="@color/white"
+            android:textSize="20sp">
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "738976514735",
+    "project_id": "iportal-cfcf5",
+    "storage_bucket": "iportal-cfcf5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738976514735:android:eb2080454cdea756360a5a",
+        "android_client_info": {
+          "package_name": "com.example.i_portal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtJ44a0tXy57Qw0JQHsfjEScC3Zev-BHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
