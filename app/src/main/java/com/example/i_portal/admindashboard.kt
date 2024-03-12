@@ -2,6 +2,7 @@ package com.example.i_portal
 
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -20,6 +21,7 @@ class AdminDashboard : AppCompatActivity(), NavigationView.OnNavigationItemSelec
 
     //initialize all layer
     private lateinit var drawerLayout: DrawerLayout
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,12 +42,26 @@ class AdminDashboard : AppCompatActivity(), NavigationView.OnNavigationItemSelec
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
+
+
+
         if (savedInstanceState == null)
         {
             replaceFragment(HomeFragment())
             navigationView.setCheckedItem(R.id.navigation_home)
         }
+
+
     }
+    //buttons
+    fun onButtonClick(view: View)
+    {
+        when(view.id)
+        {
+            R.id.btn_add_student -> replaceFragment(AddStudentFragment())
+        }
+    }
+
 
     //fragments
     private fun replaceFragment(fragment: Fragment)
@@ -74,7 +90,7 @@ class AdminDashboard : AppCompatActivity(), NavigationView.OnNavigationItemSelec
     }
 
 
-
+//sign out prompt
     private fun showSignOutDialog() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Sign Out")
@@ -92,16 +108,18 @@ class AdminDashboard : AppCompatActivity(), NavigationView.OnNavigationItemSelec
             }
             .show()
     }
-
+//navigation side bar
     override fun onNavigationItemSelected(item: MenuItem): Boolean
     {
         when (item.itemId)
         {
             R.id.home-> replaceFragment(HomeFragment())
             R.id.settings->replaceFragment(SettingsFragment())
+            R.id.aboutus->replaceFragment(AboutUsFragment())
             R.id.logout-> showSignOutDialog()
         }
         return true
     }
+
 
 }

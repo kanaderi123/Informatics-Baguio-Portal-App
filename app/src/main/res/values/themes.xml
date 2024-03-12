@@ -6,13 +6,10 @@
     </style>
 
     <style name="Theme.IPortal" parent="Base.Theme.IPortal" />
-
     <style name="Theme.IPortal.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-
     <style name="Theme.IPortal.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
     <style name="Theme.IPortal.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

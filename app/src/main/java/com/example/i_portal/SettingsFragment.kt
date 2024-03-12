@@ -62,7 +62,7 @@ class SettingsFragment : Fragment() {
                         val updatedpword = data2.text.toString()
 
                         //if no changes
-                        if(data?.adminuname != updateduname || data?.adminpword != updatedpword)
+                        if(data?.adminuname != updateduname || data.adminpword != updatedpword)
                         {
                             dbref.child("adminuname").setValue(updateduname)
                             dbref.child("adminpword").setValue(updatedpword)

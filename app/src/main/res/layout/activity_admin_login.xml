@@ -66,7 +66,8 @@
                 android:layout_marginLeft="15dp"
                 android:fontFamily="@font/montserrat"
                 android:padding="15dp"
-                android:textColor="#1b2838">
+                android:textColor="#1b2838"
+                android:inputType="text">
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
         <!--Password textbox-->

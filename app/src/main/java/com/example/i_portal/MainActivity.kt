@@ -1,6 +1,3 @@
-package com.example.i_portal
-
-
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -8,6 +5,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.i_portal.AdminLogin
 import com.example.i_portal.R
+import com.example.i_portal.StudentLogin
 import com.google.firebase.FirebaseApp
 
 class MainActivity : AppCompatActivity() {
@@ -15,12 +13,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Initialize Firebase
         FirebaseApp.initializeApp(this)
 
         // Go to student login
         val studButton = findViewById<Button>(R.id.btn_student)
         studButton.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this, StudentLogin::class.java)
+            val intent = Intent(this,StudentLogin::class.java)
             startActivity(intent)
         })
 
